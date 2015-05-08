@@ -1,6 +1,6 @@
 {
   "name": "simple-message",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": {
     "name": "egg",
     "email": "i@egg.pe.kr"
@@ -11,6 +11,10 @@
     "type": "git",
     "url": "git://github.com/egg-/simple-message.git"
   },
+  "keywords": [
+    "message"
+  ],
+  "license": "MIT",
   "main": "./index",
   "devDependencies": {
     "request": "^2.55.0"
