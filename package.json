@@ -13,7 +13,9 @@
   },
   "main": "./index",
   "devDependencies": {
+    "request": "^2.55.0"
   },
   "dependencies": {
+    "request": "^2.55.0"
   }
 }

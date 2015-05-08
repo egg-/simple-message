@@ -20,3 +20,8 @@ message.load('error', {
 });
 
 console.log(message.error.get('common.missing_required_parameter'));
+
+// override
+message.load('error', 'http://madsquare.github.io/tosq/resource/error.json', function(err, item) {
+  console.log(item['common.missing_required_parameter'][1], message.error.get('common.missing_required_parameter').message);
+});
