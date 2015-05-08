@@ -1,0 +1,19 @@
+{
+  "name": "simple-message",
+  "version": "0.0.1",
+  "author": {
+    "name": "egg",
+    "email": "i@egg.pe.kr"
+  },
+  "description": "simple message handler.",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/egg-/simple-message.git"
+  },
+  "main": "./index",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}
