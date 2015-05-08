@@ -1,5 +1,7 @@
 # simple-message
 
+simple message handler.
+
 ## Usage
 
 ```javascript
