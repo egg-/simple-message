@@ -1,6 +1,6 @@
 # simple-message 
 
-[![version](https://img.shields.io/npm/v/simple-message.svg)](https://www.npmjs.com/package/simple-message)
+[![version](https://img.shields.io/npm/v/simple-message.svg) ![download](https://img.shields.io/npm/dm/simple-message.svg)](https://www.npmjs.com/package/simple-message)
 
 simple message handler.
 
