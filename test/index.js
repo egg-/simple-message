@@ -1,5 +1,6 @@
 var message = require('../');
 
+// load by json object
 message.load('error', {
   "common.missing_required_parameter": [
     400,
@@ -21,10 +22,18 @@ message.load('error', {
 
 console.log(message.error.get('common.missing_required_parameter'));
 
-// override
+// load by remote json file
 message.load('error', 'http://madsquare.github.io/tosq/resource/error.json', function(err, item) {
   console.log(
     item['common.missing_required_parameter'][1], 
     message.error.get('common.missing_required_parameter').message
   );
 });
+
+// load by remote yaml file
+message.loadYAML('error', 'http://madsquare.github.io/tosq/resource/error.yml', function(err, item) {
+  console.log(
+    item['common.missing_required_parameter'][1], 
+    message.error.get('common.missing_required_parameter').message
+  );
+})
