@@ -4,13 +4,38 @@
 
 simple message handler.
 
-## Usage
+## Install
+
+```
+npm install simple-message
+```
+
+## API
+
+### message.error.get(key)
 
 ```javascript
-
 var message = require('simple-message');
 
-// case 1
+var error = message.error.get('common.missing_required_parameter');
+```
+```javascript
+// console.log(error);
+
+{
+  type: 'common.missing_required_parameter',
+  code: 400,
+  message: 'The request is missing a required parameter.'
+}
+```
+
+### message.load(key, value, [callback])
+
+load by json object
+
+```javascript
+var message = require('simple-message');
+
 message.load('error', {
   "common.missing_required_parameter": [
     400,
@@ -29,16 +54,35 @@ message.load('error', {
     "Problems parsing JSON."
   ]
 });
+```
 
-console.log(message.error.get('common.missing_required_parameter'));
+### message.load(key, url, [callback])
 
+load by remote json file.
 
-// case 2
-message.load('error', 'http://madsquare.github.io/tosq/resource/error.json', function(err, item) {
+```javascript
+var message = require('simple-message');
+
+message.load('error', 'json format file url', function(err, item) {
   console.log(item['common.missing_required_parameter'][1], message.error.get('common.missing_required_parameter').message);
 });
-
 ```
+
+### message.loadYAML(key, url, [callback])
+
+load by remote yaml file.
+
+```javascript
+message.loadYAML('error', 'yaml format file url', function(err, item) {
+  console.log(item['common.missing_required_parameter'][1], message.error.get('common.missing_required_parameter').message);
+});
+```
+
+## Sample file
+
+* [error.json](sample/error.json)
+* [error.yml](sample/error.yml)
+
 
 ## LICENSE
 

@@ -1,0 +1,257 @@
+# common
+common.forbidden: 
+  - 403
+  - "Access forbidden. The request may not be properly authorized."
+common.quota_exceeded: 
+  - 403
+  - "The rquest cannot be completed because you have exceed you quota."
+common.invalid_client: 
+  - 403
+  - "The request is invalid client data."
+common.invalid_authentication: 
+  - 403
+  - "The request is invalid authorization data."
+common.not_exist_token: 
+  - 403
+  - "There is no token data."
+common.expired_access_token: 
+  - 403
+  - "The token is expired."
+common.expired_refresh_token: 
+  - 403
+  - "The token is expired."
+common.missing_required_parameter: 
+  - 400
+  - "The request is missing a required parameter."
+common.method_not_allowed: 
+  - 400
+  - "The API call is correct, but the method is not allowed."
+common.unexpected_parameter: 
+  - 400
+  - "The request specifies an unexpected parameter."
+common.authorization_required: 
+  - 401
+  - "The request uses the parameter required authorized but is not properly."
+common.required_permissions: 
+  - 401
+  - "Required permissions for request."
+common.invalid_since_no: 
+  - 400
+  - "If since_no and max_no is specified at the same time, since_no does not have to be a big number than max_no."
+common.invalid_json_string: 
+  - 400
+  - "Problems parsing JSON."
+client.duplicate_client_name: 
+  - 409
+  - "Only one client per user."
+
+# user
+user.not_exists: 
+  - 404
+  - "There is no user to return for the specified."
+user.invalid_email: 
+  - 400
+  - "Invalid email address. please only use alphanumeric characters."
+user.invalid_display_name: 
+  - 400
+  - "Invalid display name. please only starting in alphabet and allow use numeric and '-, _' characters."
+user.invalid_gender: 
+  - 400
+  - "Invalid gender type."
+user.incorrect_email: 
+  - 404
+  - "The email you entered does not belong to any account."
+user.incorrect_passwd: 
+  - 403
+  - "Incorrect password."
+user.duplicate_email: 
+  - 409
+  - "There is duplicate email user."
+user.duplicate_display_name: 
+  - 409
+  - "There is duplicate display_name."
+user.invalid_login_info: 
+  - 403
+  - "Incorrect email or password."
+user.not_exist_verify_token: 
+  - 403
+  - "There is no data to verify the email address."
+user.not_exist_reset_passwd_token: 
+  - 404
+  - "There is no data to reset password."
+user.expired_reset_passwd_token: 
+  - 403
+  - "The reset password token is expired."
+user.not_matched_verify_token: 
+  - 403
+  - "User information does not match."
+user.unauthorized_email: 
+  - 403
+  - "The unauthorized e-mail address."
+
+# follow
+follow.cannot_follow_yourself: 
+  - 400
+  - "Error you cannot follow yourself."
+
+# subscription
+subscription.empty_channel: 
+  - 404
+  - "There is empty list."
+
+# channel
+channel.not_exists: 
+  - 404
+  - "There is no channel to return for the specified."
+channel.duplicate_resource: 
+  - 409
+  - "This resource is already exists."
+channel.duplicate_original_resource: 
+  - 409
+  - "This resource is already exists."
+channel.resource_not_exists: 
+  - 404
+  - "There is no resource to return for the specified channel."
+channel.duplicate_number: 
+  - 409
+  - "This number is already exists."
+channel.duplicate_url: 
+  - 409
+  - "This url is already exists."
+channel.already_been_registered: 
+  - 409
+  - "Other channels have already been registered."
+channel.invalid_state: 
+  - 400
+  - "Invalid channel state value."
+channel.invalid_category: 
+  - 400
+  - "Invalid channel category value."
+channel.invalid_label: 
+  - 400
+  - "Invalid channel label value."
+channel.invalid_parameter_value: 
+  - 400
+  - "Invalid parameter value."
+channel.invalid_url: 
+  - 400
+  - "Invalid url value. please only starting in alphabet and allow use numeric and `-`, `_` characters."
+channel.invalid_ratings: 
+  - 400
+  - "Invalid ratings value."
+channel.invalid_privacy: 
+  - 400
+  - "Invalid privacy type or value."
+
+# resource
+resource.not_exists: 
+  - 404
+  - "There is no resource to return for the specified."
+resource.invalid_type: 
+  - 500
+  - "Invalid resource type."
+resource.not_supported_provider: 
+  - 500
+  - "Not supported video provider.(only youtube, vimeo)."
+resources.video_not_found: 
+  - 404
+  - "Cannot found video on url(site)."
+resources.forbidden_video: 
+  - 403
+  - "Cannot use on external site."
+resources.vimeo_required_authorization: 
+  - 500
+  - "The requested URL returned error."
+
+# comment
+comment.not_exists: 
+  - 404
+  - "There is no comment to return for the specified."
+
+# report
+report.not_exists: 
+  - 404
+  - "There is no report to return for the specified."
+
+# sns
+sns.unsupport_provider: 
+  - 404
+  - "It is unsupported provider."
+sns.cannot_authenticate: 
+  - 500
+  - "Cannot authenticate user."
+sns.unverified_email: 
+  - 400
+  - "Only verified email address is possible."
+sns.invalid_token: 
+  - 403
+  - "The request is invalid token data."
+
+# restriction
+restriction.invalid_etime: 
+  - 400
+  - "Invalid end time value."
+
+# device
+device.invalid_secret: 
+  - 403
+  - "The request is invalid secret data."
+device.not_exists: 
+  - 404
+  - "There is no device to return for the specified."
+
+# activity
+activity.not_exists: 
+  - 404
+  - "There is no activity to return for the specified."
+
+# notification
+notification.invalid_type: 
+  - 400
+  - "The type is invalid value."
+
+# validate
+validate.video_not_found: 
+  - 404
+  - "Cannot found video on url(site)."
+validate.channel_not_found: 
+  - 404
+  - "Cannot found channel on url(site)."
+validate.forbidden_video: 
+  - 403
+  - "Cannot use on external site."
+validate.video_age_restricted: 
+  - 403
+  - "Age Restricted video."
+validate.vimeo_required_authorization: 
+  - 500
+  - "The requested URL returned error."
+
+# cache
+cache.invalid_token: 
+  - 400
+  - "The token value is invalid."
+
+# video
+video.not_found: 
+  - 404
+  - "Cannot found video on url(site)."
+video.channel_not_found: 
+  - 404
+  - "Cannot found channel on url(site)."
+video.forbidden: 
+  - 403
+  - "Cannot use on external site."
+video.age_restricted: 
+  - 403
+  - "Age Restricted video."
+video.vimeo_required_authorization: 
+  - 500
+  - "The requested URL returned error."
+video.not_supported_provider: 
+  - 500
+  - "Not supported video provider.(only youtube, vimeo, facebook)."
+video.invalid_url: 
+  - 500
+  - "Invalid url. It will not be able to get the information."
+

@@ -1,6 +1,6 @@
 {
   "name": "simple-message",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": {
     "name": "egg",
     "email": "i@egg.pe.kr"
@@ -17,9 +17,11 @@
   "license": "MIT",
   "main": "./index",
   "devDependencies": {
+    "js-yaml": "^3.3.1",
     "request": "^2.55.0"
   },
   "dependencies": {
+    "js-yaml": "^3.3.1",
     "request": "^2.55.0"
   }
 }
