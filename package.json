@@ -12,7 +12,9 @@
     "url": "git://github.com/egg-/simple-message.git"
   },
   "keywords": [
-    "message"
+    "message",
+    "json",
+    "yaml"
   ],
   "license": "MIT",
   "main": "./index",
