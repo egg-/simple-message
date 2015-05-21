@@ -68,7 +68,7 @@ message.load('error', 'json format file url', function(err, item) {
 });
 ```
 
-## message.loadYAML(key, url, [callback])
+### message.loadYAML(key, url, [callback])
 
 load by remote yaml file.
 
